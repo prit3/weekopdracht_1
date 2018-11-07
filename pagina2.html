@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="week1style.css">
+</head>
+<body class="portfolio">
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="week1.html">Home</a></li>
+                <li class="active"><a href="pagina2.html">Portfolio</a></li>
+                <li><a href="pagina3.html">Projecten</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h3>Patrick Broersma</h3>
+    </header>
+    <div class="wrap">
+        <div class="imgs"><img src="patrick.jpeg"></div>
+        <div class="topinfo">
+            <label for="topc">Persoonlijke gegevens</label><input type="checkbox" id="topc" onclick="topinfo()">
+            <div id="topdiv" class="innerdiv">
+                <table>
+                    <tr>
+                        <td>Naam</td>
+                        <td>Patrick Renaldo Broersma</td>
+                    <tr>
+                        <td>Geboortedatum</td>
+                        <td>*************</td>
+                    </tr>
+                    <tr>
+                        <td>Geslacht</td>
+                        <td>Man</td>
+                    </tr>
+                    <tr>
+                        <td>Straat</td>
+                        <td>*************</td>
+                    <tr>
+                        <td>Postcode</td>
+                        <td>*************</td>
+                    </tr>
+                    <tr>
+                        <td>Plaats</td>
+                        <td>Leeuwarden</td>
+                    </tr>
+                    <tr>
+                        <td>E-mailadres</td>
+                        <td>*************</td>
+                    </tr>    
+                    <tr>
+                        <td>Rijbewijs</td>
+                        <td>Geen</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="info">
+            <label for="topA">Persoonlijke presentatie</label><input type="checkbox" id="topA" onclick="topA()">
+            <div id="divA" class="innerdiv">
+                <p>
+                    Ik ben een rustig en hard door werkend persoon die graag zijn handen uit de mouwen steekt en openstaat om nieuwe vaardigheden te leren ook buiten mijn vakgebied.
+                </p>
+            </div>
+        </div>
+        <div class="info">
+            <label for="topB">Werk ervaring</label><input type="checkbox" id="topB" onclick="topB()">
+                <div id="divB" class="innerdiv">
+                    <div>
+                        <label for="BA" class="labelA" >Algemeen medewerker ict Friesland College</label>
+                        <input type="checkbox" id="BA" onclick="BA()">
+                            <div id="divBA" class="ABCcontent"> 
+                                Tijdens mijn studie heb ik een baan aangeboden gekregen tot 1 september. Deze baan
+                                houd in dat ik in de schoolvakantie mee helpt aan verhuizing van de computer werkplekken
+                                binnen het gehele Friesland college.
+                            </div>
+                    </div>
+
+                    <div>
+                        <label for="BB" class="labelA">Medewerker helpdesk ict De Friesland Zorgverzekeraar</label>
+                        <input type="checkbox" id="BB" onclick="BB()">
+                            <div id="divBB" class="ABCcontent">
+                                Mijn tweede stage heb ik als Medewerker Helpdesk stage gelopen       bij De Friesland
+                                Zorgverzekeraar. Hier heb ik lokaal ondersteuning gegeven aan interne gebruikers die van
+                                afstand niet geholpen konden worden. Naast ondersteuning heb ik ook nog werkplekken
+                                ingericht of vervangen met nieuwe hardware.
+                            </div>
+                    </div>
+
+                    <div>
+                        <label for="BC" class="labelA">Netwerkbeheerder Friesland College</label>
+                        <input type="checkbox" id="BC" onclick="BC()">
+                        <div id="divBC" class="ABCcontent">
+                            Mijn eerst stage op niveau 4 als netwerkbeheerder. Ik heb in deze stage samen met nog 3
+                            collega's het netwerk van de Media en IT beheerd. Er werd van ons gevraagd dat we klanten
+                            te woord stonden met problemen en daar empathie voor te tonen en zo snel mogelijk met
+                            een oplossing voor de klant zijn probleem te komen. Naast klanten te woord staan moesten
+                            we ook de servers beheren en verbeteren als dat nodig was.
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+        <a href="week1.html">Home</a>
+        <a href="pagina2.html">Portfolio</a>
+        <a href="pagina3.html">Projecten</a>
+        <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+    
+    <script src="week1script.js"></script>
+</body>
