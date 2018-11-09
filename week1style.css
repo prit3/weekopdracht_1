@@ -1,26 +1,40 @@
 /*-----all-pages-----*/
 
-*{  margin: 0; padding: 0;}
+*
+{
+    margin: 0; 
+    padding: 0;
+}
 
 /*-----header-----*/
 
 header
-{   background-color: dimgray;
+{   
+    background-color: snow;
     padding: 10px;
     height: 40px
 }
+header a
+{
+	text-decoration: none;
+	color:black;
+}
 
-header h3 
-{   line-height: 40px;
+header h3
+{
+	text-decoration: none;
+    line-height: 40px;
 }
 
 nav ul 
-{   float: right;
+{   
+    float: right;
 }
 
 nav ul li 
-{   display: inline-block;
-    background-color:darkgray;
+{   
+    display: inline-block;
+    background-color:gainsboro;
     padding:10px;
     margin-right:1px;
     border-radius: 5px;
@@ -29,17 +43,26 @@ nav ul li
 }
 
 nav ul li a 
-{   text-decoration:none;
+{   
+    text-decoration:none;
     color: black;
 }
 
+nav ul li:hover
+{
+	background-color: limegreen;
+	transition: 0.2s
+}
+
 .active 
-{   background-color: gainsboro;
+{   
+    background-color:darkgray;
 }
 
 /*-----wrap-----*/
 
-.wrap {
+.wrap 
+{
     width:99%;
     height: 1080px;
     padding: 10px;
@@ -47,11 +70,13 @@ nav ul li a
     margin-right: auto;
 }
 
-.wrapP2 {width: 80%;
-        height: 1080px;
+.wrapP2 
+{   width: 80%;
+    height: 1080px;
     padding: 10px;
     margin-left: auto;
-    margin-right: auto;} 
+    margin-right: auto;
+} 
 
 @media only screen and (max-width:800px)
 {
@@ -62,55 +87,63 @@ nav ul li a
 /*-----footer-----*/
 
 footer 
-{   float: right;
-    background-color: dimgray;
+{   
+    float: right;
+    background-color: snow;
     width: 100%;
     padding: 20px 0px;
     height: 40px;
 }
 
 footer div 
-{   float: right;
+{   
+    float: right;
     padding: 5px;
 }
 
 footer a 
-{   text-decoration: none;
+{ 
+    text-decoration: none;
     color: black;
     margin: 10px 10px;
 }
 
 body.home
-{   background-image: 
+{   
+    background-image: 
     url(http://www.ensembletech.in/wp-content/uploads/2018/07/Portfolio-background-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 body.portfolio
-{   background-image: 
+{   
+    background-image: 
     url(https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 body.projects
-{   background-image:
-    url(https://static1.squarespace.com/static/5268789ae4b026925660bc21/t/5aeba757352f53290db829c6/1525393262553/portfolio+background+2.jpg);
+{   
+    background-image: url(https://static1.squarespace.com/static/5268789ae4b026925660bc21/t/5aeba757352f53290db829c6/1525393262553/portfolio+background+2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-body.contact {  
+body.contact 
+{  
     background-image: 
     url(http://www.euraster.fr/wp-content/uploads/2013/06/organic-1280538_640.jpg);
     background-repeat: no-repeat;
-    background-size: cover;}
+    background-size: cover;
+}
 
 /*------home------*/
 
 .content 
-{   display: block;
+{   
+    display: block;
     color: aliceblue;
     text-align: center;
     vertical-align: middle;
@@ -120,21 +153,33 @@ body.contact {
 }
 
 div.content p 
-{   margin:20px;  
+{   
+    margin:20px;  
 }
 
 div.content a 
-{   background-color: aliceblue;
+{   
+    background-color: aliceblue;
     padding: 10px;
     border-radius:5px;
     text-decoration: none;
     color:black;
 }
 
+div.content a:hover{background-color: limegreen;
+transition: 0.3s}
+
 /*----------pagina2--------*/
 
-.blockA{float: left;}
-.blockB{float: right;}
+.blockA
+{
+    float: left;
+}
+
+.blockB
+{
+    float: right;
+}
 
 section img 
 {   
@@ -156,7 +201,8 @@ section img
 }
 
  td 
-{   padding: 5px 0px;
+{
+    padding: 5px 0px;
     padding-right: 15px;
 }
 
@@ -178,14 +224,19 @@ section img
 div div label {display:block;}
 
 .innerdiv
-{   margin-left:10px;
-    margin-top: 5px;}
+{
+    margin-left:10px;
+    margin-top: 5px;
+}
 
 div div p 
-{   margin-top: 10px;}
+{
+    margin-top: 10px;
+}
 
 div.imgs img 
-{   float: left;
+{
+    float: left;
     border: 1px solid black;
     max-width: 550px;
     max-height: 750px;
@@ -195,37 +246,52 @@ div.imgs img
 }
 
 div label 
-{   font-size: 20px;
+{   
+    font-size: 20px;
     padding: 0px 10px;
-    }
+}
 
 .labelA
 {   
     margin-top: 10px;
     padding: 0px 0px;
     font-size: 19px;
-    }
+}
 
 .ABCcontent
-{   margin-left: 0px;
+{
+    margin-left: 0px;
     margin-top: 10px;
-    }
+}
 
-input[type="checkbox"] + label {display: block;}
+/*-------checkbox------*/
 
-input[type="checkbox"] {
-display: none;}
+input[type="checkbox"] + label 
+{
+    display: block;
+}
+
+input[type="checkbox"] 
+{
+    display: none;
+}
 
 input[type="checkbox"]+ label:after 
-{   margin-left: 10px; content:"\25b6"; 
+{
+    margin-left: 10px; 
+    content:"\25b6"; 
 }
 
-input[type="checkbox"]:checked + label:after {content: "\25bc";
+input[type="checkbox"]:checked + label:after 
+{
+    content: "\25bc";
 }
+
 /*-------contact---------*/
 
 form 
-{   font-size: 20px;
+{  
+    font-size: 20px;
     width: 300px;
     background-color: rgba(70,100,100, 0.3);
     padding: 40px 0px 40px 60px;
@@ -233,10 +299,16 @@ form
     margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
-    }
+}
+
+input[type=text],input[type=email]
+{
+	margin-bottom:15px;
+}
 
 input[type=submit]
-{   width: 250px;
+{
+    width: 250px;
     height: 40px;
     margin-top: 10px;
     background-color: green;
@@ -245,6 +317,9 @@ input[type=submit]
     color:white
 }
 
-form textarea {border-radius:10px;
-padding: 5px;
-font-size: 13px}
+form textarea 
+{
+    border-radius:10px;
+    padding: 5px;
+    font-size: 13px
+}
