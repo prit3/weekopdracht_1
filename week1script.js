@@ -10,7 +10,10 @@ function topinfo() {
     var conB            = document.getElementById("divB");
     
     var infoC           = document.getElementById("topC");
-    var conC            = document.getElementById("divC");  
+    var conC            = document.getElementById("divC");
+    
+    var infoD           = document.getElementById("topD");
+    var conD            = document.getElementById("divD");
     
     var checkBox        = document.getElementById("topc");
     var text            = document.getElementById("topdiv");
@@ -20,11 +23,13 @@ function topinfo() {
     text.style.display  = "block";
     conA.style.display  = "none";
     conB.style.display  = "none";
-    conC.style.display  = "none"
+    conC.style.display  = "none";
+    conD.style.display  = "none";
       
     infoA.checked       = false;
     infoB.checked       = false;
     infoC.checked       = false;
+    infoD.checked       = false;
     } 
     else {
     text.style.display  = "none";
@@ -42,7 +47,10 @@ function topA() {
     var conB            = document.getElementById("divB");
 
     var infoC           = document.getElementById("topC");
-    var conC            = document.getElementById("divC");    
+    var conC            = document.getElementById("divC");
+    
+    var infoD           = document.getElementById("topD");
+    var conD            = document.getElementById("divD");
     
     var checkBox        = document.getElementById("topA");
     var text            = document.getElementById("divA");
@@ -52,10 +60,12 @@ function topA() {
     contop.style.display= "none";
     conB.style.display  = "none";
     conC.style.display  = "none";
+    conD.style.display  = "none";
         
     infotop.checked     = false;
     infoB.checked       = false;
     infoC.checked       = false;
+    infoD.checked       = false;
     }    
     else {
     text.style.display  = "none";
@@ -80,11 +90,15 @@ function topB() {
     
     var infotop         = document.getElementById("topc");
     var contop          = document.getElementById("topdiv");
+    
     var infoA           = document.getElementById("topA");
     var conA            = document.getElementById("divA");
     
     var infoC           = document.getElementById("topC");
     var conC            = document.getElementById("divC");
+
+    var infoD           = document.getElementById("topD");
+    var conD            = document.getElementById("divD");
     
     var checkBox        = document.getElementById("topB");
     var text            = document.getElementById("divB");
@@ -94,17 +108,21 @@ function topB() {
     text.style.display  = "block";
     contop.style.display= "none";
     conA.style.display  = "none";
-    conC.style.display  = "none";    
+    conC.style.display  = "none";
+    conD.style.display  = "none";
     BA.style.display    = "none";
     BB.style.display    = "none";
     BC.style.display    = "none";
+
     
     infotop.checked     = false;
     infoA.checked       = false;
     infoC.checked       = false;
+    infoD.checked       = false;
     BAC.checked         = false;
     BBC.checked         = false;
     BCC.checked         = false;
+
 
   } else {
     text.style.display = "none";
@@ -180,6 +198,9 @@ function topC() {
     var infoB           = document.getElementById("topB");
     var conB            = document.getElementById("divB");
     
+    var infoD             = document.getElementById("topD");
+    var conD              = document.getElementById("divD");
+    
     var CAC             = document.getElementById("CA");
     var CA              = document.getElementById("divCA");
     
@@ -194,14 +215,17 @@ function topC() {
     contop.style.display= "none";
     conA.style.display  = "none";
     conB.style.display  = "none";
+    conD.style.display  = "none";
     CA.style.display    = "none";
     CB.style.display    = "none";
-    
-    infoA.checked       = false;
+
     infotop.checked     = false;
+    infoA.checked       = false;
     infoB.checked       = false;
-    CAC.checked          = false;
-    CBC.checked          = false;
+    infoD.checked       = false;
+    CAC.checked         = false;
+    CBC.checked         = false;
+
     
   } else {
     text.style.display  = "none";
@@ -243,6 +267,57 @@ function CB() {
     text.style.display  = "none";
   }
 } 
+
+
+//wat wil ik leren
+
+function topD() {
+
+    var infotop         = document.getElementById("topc");
+    var contop          = document.getElementById("topdiv");
+    
+    var infoA           = document.getElementById("topA");
+    var conA            = document.getElementById("divA");
+    
+    var infoB           = document.getElementById("topB");
+    var conB            = document.getElementById("divB");
+    
+    var infoC             = document.getElementById("topC");
+    var conC              = document.getElementById("divC");
+    
+    var CAC             = document.getElementById("CA");
+    var CA              = document.getElementById("divCA");
+    
+    var CBC             = document.getElementById("CB");
+    var CB              = document.getElementById("divCB");
+    
+    var checkBox        = document.getElementById("topD");
+    var text            = document.getElementById("divD");
+
+  if (checkBox.checked == true){
+    text.style.display  = "block";
+    contop.style.display= "none";
+    conA.style.display  = "none";
+    conB.style.display  = "none";
+    conC.style.display  = "none";
+    CA.style.display    = "none";
+    CB.style.display    = "none";
+
+    
+    infoA.checked       = false;
+    infotop.checked     = false;
+    infoB.checked       = false;
+    infoC.checked       = false;
+    CAC.checked         = false;
+    CBC.checked         = false;
+
+    
+  } else {
+    text.style.display  = "none";
+  }
+} 
+
+
 
 //contact
 
